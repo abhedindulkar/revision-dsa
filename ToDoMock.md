@@ -82,6 +82,11 @@ if given range 1 -> n
     use cyclic sort O(n)
     loop one by one and swap with appropriate index and its value index = value - 1;
 
+if overlapping subproblems / optimal substructures
+    DP
+    memoization (dp)
+    tabulation (storing in array)
+
 Else
   - Map/Set for O(1) time & O(n) space
   - Sort input for O(nlogn) time and O(1) space
@@ -155,15 +160,17 @@ let s1 = [];
 let s2 = [];
 
 function enqueue(element) {
+
     s1.push(element)
 }
 
 function dequeue() {
     
-    if ( ! s1.length && ! s2.length  )
+    if ( ! s1.length && ! s2.length )
         return 'empty queue';
     
-    if (s2.length > 0) {
+    if ( s2.length > 0 ) {
+        
         return s2.pop()
     }
     
@@ -177,7 +184,7 @@ function dequeue() {
 
 function isEmpty() {
     
-    if ( ! s1.length && ! s2.length  )
+    if ( ! s1.length && ! s2.length )
         return true;
         
     return false;
@@ -221,3 +228,11 @@ Sample Output:  4
 Explanation:  
 The worker can complete the tasks with the following start and finish times: (1, 2), (3, 4), (5, 7), (8, 9).
 
+
+js Advanced
+vue.js project.
+React.js project.
+Advanced DSA
+HLD
+LLD
+node.js
